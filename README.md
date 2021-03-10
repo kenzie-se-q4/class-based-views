@@ -1,6 +1,6 @@
 # class-based-views
 
-In Django, we've been purely focused on working with function-based views -- frankly, because they're easy and they get the job done. But sometimes we need to eke just a little more functionality out a view... especially if we need to be able to take in different methods (GET, POST, etc.). We can do that inside of a function, but what if there was a way to make it cleaner and easier to understand?
+In Django, we've been purely focused on working with function-based views -- frankly, because they're easy and they get the job done. But sometimes we need to make just a little more functionality out a view... especially if we need to be able to take in different methods (GET, POST, etc.). We can do that inside of a function, but what if there was a way to make it cleaner and easier to understand?
 
 Welcome to Django's class-based views. Building on Python's amazingly powerful inheritance system, a class-based view allows us to have standalone views, make classes of helper functions that can be easily used in multiple views (called [mixins](https://docs.djangoproject.com/en/3.1/topics/class-based-views/mixins/)), and separate out exactly how our views should work depending on how they're requested.
 
