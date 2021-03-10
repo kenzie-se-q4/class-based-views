@@ -48,10 +48,10 @@ def create_post_view(request):
 
 def signup_view(request):
     template_name = "generic_form.html"
-    form = LoginForm()
+    form = SignupForm()
 
     if request.method == "POST":
-        form = LoginForm(request.POST)
+        form = SignupForm(request.POST)
         if form.is_valid():
             data = form.cleaned_data
             user = User.objects.create_user(
@@ -64,10 +64,10 @@ def signup_view(request):
 
 def login_view(request):
     template_name = "generic_form.html"
-    form = SignupForm()
+    form = LoginForm()
 
     if request.method == "POST":
-        form = SignupForm(request.POST)
+        form = LoginForm(request.POST)
         if form.is_valid():
             data = form.cleaned_data
             user = authenticate(
